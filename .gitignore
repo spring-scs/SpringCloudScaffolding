@@ -1,0 +1,5 @@
+.idea/
+*.iml
+scs-euraka/target/
+scs-config/target/classes/com/xwzj/scs/ConfigApplication.class
+scs-config/target/
