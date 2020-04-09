@@ -4,8 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>xwzj.scs</groupId>
-    <artifactId>scs-config</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <artifactId>scs-hello</artifactId>
+    <version>1.0.0</version>
 
     <!-- Inherit defaults from Spring Boot -->
     <parent>
@@ -20,42 +20,26 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
-        <dependency>  
-        	<groupId>org.springframework.boot</groupId>  
-	        <artifactId>spring-boot-starter-test</artifactId>  
-	    </dependency>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
-            <version>2.1.6.RELEASE</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
             <version>2.1.5.RELEASE</version>
         </dependency>
+        <!--<dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <version>2.1.5.RELEASE</version>
+        </dependency>-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.12</version>
             <scope>provided</scope>
         </dependency>
-        <!-- jsp 解析引擎 -->
-	    <!--<dependency>
-		   <groupId>org.apache.tomcat.embed</groupId>
-		   <artifactId>tomcat-embed-jasper</artifactId>
-		</dependency>-->
-	    <!-- mysql 驱动 -->
-	    <!--<dependency>
-	        <groupId>mysql</groupId>  
-	        <artifactId>mysql-connector-java</artifactId>  
-	    </dependency>  -->
-	  	<!-- mybatis -->
-	  	<!--<dependency>
-	        <groupId>org.mybatis.spring.boot</groupId>  
-	        <artifactId>mybatis-spring-boot-starter</artifactId>  
-	        <version>1.1.1</version>  
-	    </dependency>-->
     </dependencies>
 
     <!-- Package as an executable jar -->
