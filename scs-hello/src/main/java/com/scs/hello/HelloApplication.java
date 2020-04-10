@@ -1,4 +1,4 @@
-package com.xwzj.scs;
+package com.scs.hello;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
