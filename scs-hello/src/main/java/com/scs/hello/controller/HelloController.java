@@ -22,7 +22,7 @@ public class HelloController {
      * sayHello
      * @return
      */
-    @GetMapping("sayHello")
+    @GetMapping("/sayHello")
     public String sayHello() {
         return helloService.sayHello();
     }

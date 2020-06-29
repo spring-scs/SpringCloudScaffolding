@@ -1,6 +1,6 @@
-package com.scs.hello.service.impl;
+package com.scs.hi.service.impl;
 
-import com.scs.hello.service.HelloService;
+import com.scs.hi.service.HiService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -12,13 +12,13 @@ import java.time.LocalDateTime;
  * @date 2020-4-11
  */
 @Service
-public class HelloServiceImpl implements HelloService {
+public class HiServiceImpl implements HiService {
 
     @Value("${server.port}")
     private String serverPort;
 
     @Override
-    public String sayHello() {
-        return "Hello,I'm HelloApplication,ServerPort is " + serverPort + ",Now:" + LocalDateTime.now() +";";
+    public String sayHi() {
+        return "Hi,I'm HiApplication,ServerPort is " + serverPort + ",Now:" + LocalDateTime.now() +";";
     }
 }
