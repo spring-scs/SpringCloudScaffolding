@@ -1,6 +1,6 @@
 package com.scs.hi.controller;
 
-import com.scs.hi.client.HelloClient;
+import com.scs.hi.client.HelloServiceClient;
 import com.scs.hi.service.HiService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -19,7 +19,7 @@ public class HiController {
     @Autowired
     private HiService hiService;
     @Autowired
-    private HelloClient helloClient;
+    private HelloServiceClient helloClient;
 
     /**
      * sayHi
