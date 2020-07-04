@@ -16,4 +16,7 @@ public interface HelloServiceClient {
 
     @GetMapping("/api/v1/hello/sayHello")
     String sayHello();
+
+    @GetMapping("/api/v1/hello/sayHelloHystrix")
+    String sayHelloHystrix();
 }

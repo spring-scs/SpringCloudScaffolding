@@ -20,4 +20,10 @@ public class HelloServiceClientHystrix implements HelloServiceClient {
         log.info("HelloServiceClientHystrix Fegin Error");
         return "HelloService请求失败，进入熔断处理！";
     }
+
+    @Override
+    public String sayHelloHystrix() {
+        log.info("HelloServiceClientHystrix Fegin Error");
+        return "sayHelloHystrix请求超时，正常进入熔断处理！";
+    }
 }

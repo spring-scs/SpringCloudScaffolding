@@ -39,4 +39,13 @@ public class HiController {
         return helloClient.sayHello();
     }
 
+    /**
+     * sayHello
+     * @return
+     */
+    @GetMapping("/sayHelloHystrix")
+    public String sayHelloHystrix() {
+        return helloClient.sayHelloHystrix();
+    }
+
 }
