@@ -1,0 +1,30 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: gateway
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lowerCaseServiceId: true
+      routes:
+      # =====================================
+      - id: hi
+        uri: lb://hi
+        predicates:
+          - Path=/
+      # =====================================
+      - id: hello
+        uri: lb://hello
+        predicates:
+          - Path=/hello/**
+        filters:
+          - StripPrefix=1
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
