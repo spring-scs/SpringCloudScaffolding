@@ -81,6 +81,8 @@ ribbon:
   #说明：使用Apache HttpClient读取的超时时间，单位为毫秒
   ReadTimeout: 3000
 
+from:
+  val: local
 
 ##配置Hystrix的超时时间
 #feign:
