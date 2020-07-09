@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
  * @date 2020-4-11
  */
 @Service
-//@RefreshScope
+@RefreshScope
 public class HiServiceImpl implements HiService {
 
     @Value("${server.port}")
