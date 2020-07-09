@@ -1,4 +1,4 @@
-package com.scs.gateway.config;
+package com.scs.bus.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

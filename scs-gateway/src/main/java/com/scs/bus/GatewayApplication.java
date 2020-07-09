@@ -1,4 +1,4 @@
-package com.scs.gateway;
+package com.scs.bus;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
