@@ -1,15 +1,15 @@
 ##Spring Boot Reference Guide Url = http://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#boot-features-jsp-limitations
 #server
 server:
-  port: 8002
+  port: 8001
   tomcat:
     uriEncoding: UTF-8
 spring:
   application:
-    name: hi
+    name: hello
   cloud:
     config:
-      name: hi
+      name: hello
       profile: dev
       label: develop
       uri: http://127.0.0.1:8888

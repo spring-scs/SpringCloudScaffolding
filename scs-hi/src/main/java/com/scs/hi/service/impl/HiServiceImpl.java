@@ -18,6 +18,7 @@ public class HiServiceImpl implements HiService {
 
     @Value("${server.port}")
     private String serverPort;
+
     @Value("${from.val}")
     private String fromVal;
 

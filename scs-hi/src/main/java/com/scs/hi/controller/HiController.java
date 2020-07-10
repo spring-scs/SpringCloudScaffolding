@@ -3,6 +3,8 @@ package com.scs.hi.controller;
 import com.scs.hi.client.HelloServiceClient;
 import com.scs.hi.service.HiService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;

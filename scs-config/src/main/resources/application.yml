@@ -13,6 +13,7 @@ spring:
           search-paths: config-repo
           username: 2975153510@qq.com
           password: chay27.!@#
+        label: develop
   rabbitmq:
     host: 10.20.2.65
     port: 5672
