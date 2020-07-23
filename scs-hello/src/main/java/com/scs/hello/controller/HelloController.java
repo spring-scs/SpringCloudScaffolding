@@ -25,11 +25,11 @@ public class HelloController {
      */
     @GetMapping("/sayHello")
     public String sayHello() {
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            Thread.sleep(2000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
         return helloService.sayHello();
     }
 

@@ -5,3 +5,6 @@ Spring Cloud 脚手架
 
 **Config Client动态刷新时需要执行请求（POST）来达到动态刷新配置值的效果**<br>
 http://127.0.0.1:8888/actuator/bus-refresh
+
+**Spring Cloud Sleuth 之Greenwich版本教程**<br>
+https://my.oschina.net/xwzj/blog/4423547
