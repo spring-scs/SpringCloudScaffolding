@@ -1,0 +1,22 @@
+##Spring Boot Reference Guide Url = http://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#boot-features-jsp-limitations
+#server
+server:
+  port: 9411
+  tomcat:
+    uriEncoding: UTF-8
+spring:
+  application:
+    name: zipkin-server
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/zipkin
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+#eureka
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+zipkin:
+  storage:
+    type: mysql
