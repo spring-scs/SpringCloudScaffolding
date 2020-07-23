@@ -3,16 +3,16 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <!-- 脚手架根引用，用于版本统一管理 -->
+    <parent>
+        <groupId>xwzj.scs</groupId>
+        <artifactId>scs-root</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
     <groupId>xwzj.scs</groupId>
     <artifactId>scs-config</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-
-    <!-- Inherit defaults from Spring Boot -->
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.12.RELEASE</version>
-    </parent>
 
     <!-- Add typical dependencies for a web application -->
     <dependencies>
@@ -31,23 +31,18 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-config-server</artifactId>
-            <version>2.1.6.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bus-amqp</artifactId>
-            <version>2.1.4.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-            <version>2.1.5.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.12</version>
-            <scope>provided</scope>
         </dependency>
         <!-- jsp 解析引擎 -->
 	    <!--<dependency>
